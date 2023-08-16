@@ -1,0 +1,17 @@
+[package]
+name = "blueish-dev"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.74"
+axum = "0.6.20"
+axum-server = { version = "0.5.1", features = ["tls-rustls"] }
+dotenvy = "0.15.7"
+once_cell = "1.18.0"
+tera = "1.19.0"
+tokio = { version = "1.31.0", features = ["full"] }
+tower = "0.4.13"
+tower-http = { version = "0.4.3", features = ["fs"] }
